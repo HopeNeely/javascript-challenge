@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UFO Sigtings</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFO Sigtings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
+
 <body>
-    <script src="static/js/analysis.js"></script>
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Search UFO Sigtings by Date</h1>
         <div class="row">
-          <div class="col-md-12">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>date/time</th>
-                  <th>city</th>
-                  <th>state</th>
-                  <th>country</th>
-                  <th>shape</th>
-                  <th>comment</th>
-                </tr>
-              </thead>
-              <!-- <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>United States</td>
-                  <td>California</td>
-                  <td>Sacramento</td>
-                  <td>Carberry</td>
-                  <td>87</td>
-                </tr>
-              </tbody> -->
-            </table> 
-          </div>
+          <button type="button" class="btn btn-secondary">Search</button>
+          <input id="input-field" type="date">
         </div>
+        <div class="row">
+          <table id="ufo-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Shape</th>
+                <th>Duration</th>
+                <th>Comments</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2>Have you had a UFO Sigting?</h2>
+        <h4>Share it with the planet Earth here:</h3>
+        <!-- add form on the sdie here -->
+
+      </div>
     </div>
 
+  </div>
+  <div class="container">
+  </div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/analysis.js"></script>
 </body>
+
 </html>
