@@ -2,7 +2,6 @@ var data = data
 
 var tbody = d3.select("tbody")
 
-
 var button = d3.select("#button")
 
 var searchform = d3.select("#form")
@@ -35,25 +34,4 @@ function runEnter() {
     })
 }
 
-
-
-
-
-// Add for with date option and search button to filter form data by date
-// var dateField = d3.select("#input-field")
-
-// dateField.on("change", () => {
-//     var newDate = d3.event.target.value;
-//     // console.log(newDate);
-    // on this event listend we want this to search the table by date.
-
-//   });
-
-
-// code for new ufo sightings form  
-
-
-
-
-// // clear the existing output
-// output.html("")
+//  ADD FORM TO SUBMIT NEW UFO SIGTINGS!!!  
