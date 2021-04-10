@@ -13,10 +13,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1>Search UFO Sigtings by Date</h1>
         <div class="row">
-          <button type="button" class="btn btn-secondary">Search</button>
-          <input id="input-field" type="date">
+          <form id="form">
+            <div class="form-group">
+              <label for="table-search">Search UFO Sightings by date</label>
+              <input class="form-control" id="table-search-input" name="table-search" type="text" placeholder="1/1/2010">
+            </div>
+            <button id="button" type="button" class="btn btn-default">Search</button>
+          </form>
         </div>
         <div class="row">
           <table id="ufo-table" class="table table-striped">
@@ -37,8 +41,8 @@
       </div>
       <div class="col-md-4">
         <h2>Have you had a UFO Sigting?</h2>
-        <h4>Share it with the planet Earth here:</h3>
-        <!-- add form on the sdie here -->
+        <h4>Share it with planet Earth here:</h3>
+          <!-- add form on the sdie here -->
 
       </div>
     </div>
